@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html data-ng-app="app" data-ng-controller="AppController as vm">
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <script id="head-files"></script>
+</head>
+<body>
+    
+    <div data-ui-view></div>
+
+    <!-- vendors -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/oclazyload/dist/ocLazyLoad.js"></script>
+    <!-- /vendors -->
+
+    <!-- app -->
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/core.provider.js"></script>
+    <script src="app/core/core.directive.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.constant.js"></script>
+    <script src="app/app.config.js"></script>
+    <!-- /app -->
+
+    <!-- dynamic -->
+    <script id="body-files"></script>
+    <!-- /dynamic -->
+</body>
+</html>
