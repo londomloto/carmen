@@ -59,7 +59,7 @@
             <div class="cc-content">
                 <h1 class="angsa" style="color:#282828; line-height: 45px;">
                     THE CARMEN DIFFERENCE <br>
-                    <a href="#" class="btn btn-clean" style="padding: 10px 20px;">DISCOVER MORE ></a>
+                    <a href="" class="btn btn-clean" style="padding: 10px 20px;">DISCOVER MORE ></a>
                 </h1>
             </div>
         </div>
@@ -69,17 +69,28 @@
             <div class="text-center" style="margin: 30% 10%;">
                 <h1 class="angsa" style="color:#282828; margin-bottom: -20px !important">JEWELLERY</h1> <br>
                 <p style="line-height: 20px; font-size: 13px;">Find your perfect diamond jewellery <br> piece to mark your special moment.</p><br>
-                <a href="#" class="btn btn-clean" style="padding: 10px 20px;">DISCOVER OUR DESIGN</a>
+                <a data-ui-sref="store.products" class="btn btn-clean" style="padding: 10px 20px;">DISCOVER OUR DESIGN</a>
             </div>
         </div>
         <div class="col-md-7 col-sm-12 col-xs-12" style="margin-left: -15px;">          
             <div class="row">
+
+                <div data-ng-repeat="item in products" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">              
+                    <div class="hover ehover3">
+                        <img class="img-responsive" src="assets/img/products/4.jpg" alt="1">
+                        <div class="overlay">
+                            <h2>Product Name</h2>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-1'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                        </div>              
+                    </div>
+                </div>                
+
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">              
                     <div class="hover ehover3">
                         <img class="img-responsive" src="assets/img/products/4.jpg" alt="1">
                         <div class="overlay">
                             <h2>Product Name</h2>
-                            <a href="product4.html"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-1'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
                         </div>              
                     </div>
                 </div>
@@ -88,7 +99,7 @@
                         <img class="img-responsive" src="assets/img/products/5.jpg" alt="1">
                         <div class="overlay">
                             <h2>Product Name</h2>
-                            <a href="product5.html"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-2'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
                         </div>              
                     </div>
                 </div>
@@ -97,7 +108,7 @@
                         <img class="img-responsive" src="assets/img/products/6.jpg" alt="1">
                         <div class="overlay">
                             <h2>Product Name</h2>
-                            <a href="product6.html"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-3'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
                         </div>              
                     </div>
                 </div>
@@ -107,7 +118,7 @@
                         <img class="img-responsive" src="assets/img/products/3.jpg" alt="1">
                         <div class="overlay">
                             <h2>Product Name</h2>
-                            <a href="product3.html"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-4'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
                         </div>              
                     </div>
                 </div>
@@ -116,7 +127,7 @@
                         <img class="img-responsive" src="assets/img/products/2.jpg" alt="1">
                         <div class="overlay">
                             <h2>Product Name</h2>
-                            <a href="product2.html"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-5'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
                         </div>              
                     </div>
                 </div>
@@ -125,7 +136,7 @@
                         <img class="img-responsive" src="assets/img/products/1.jpg" alt="1">
                         <div class="overlay">
                             <h2>Product Name</h2>
-                            <a href="product1.html"><button class="info btn-black">DISCOVER ME NOW</button></a>
+                            <a data-ui-sref="store.products.detail({slug: 'example-product-6'})"><button class="info btn-black">DISCOVER ME NOW</button></a>
                         </div>              
                     </div>
                 </div>

@@ -16,3 +16,18 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/**
+ * CLIENT SITE
+ */
+Route::get('site/status', 'SiteController@status');
+
+/**
+ * USERS
+ */
+
+/**
+ * PRODUCTS
+ */
+Route::post('products/upload', 'ProductController@upload');
+Route::resource('products', 'ProductController');

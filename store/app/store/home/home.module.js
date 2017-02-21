@@ -6,8 +6,13 @@
         .controller('StoreHomeController', StoreHomeController)
         .directive('uislider', uislider);
 
-    function StoreHomeController() {
+    /** @ngInject */
+    function StoreHomeController($scope) {
         
+        $scope.products = [
+            {name: 'Example Product', slug: 'example-product-1', image: '1.jpg'}
+        ];
+
     }
 
     function uislider() {

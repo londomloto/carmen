@@ -2,10 +2,14 @@
 <html data-ng-app="app" data-ng-controller="AppController as vm">
 <head>
     <meta charset="utf-8">
-    <title>{{ site.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>{{ __site__.title }}</title>
+
     <script id="head-files"></script>
 </head>
-<body>
+<body class="{{ __theme__.bodyCls }}">
     
     <div data-ui-view></div>
 

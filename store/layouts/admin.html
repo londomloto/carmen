@@ -1,3 +1,210 @@
-<div>
-    Admin Layout
+<div data-uitheme class="wrapper">
+    <header class="main-header">
+        <a data-ui-sref="admin.index" class="logo">
+            <span class="logo-mini">CS</span> 
+            <span class="logo-lg">{{ __site__.title }}</span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown messages-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="pull-left">
+                                            <img src="assets/img/admin/avatar5.png" class="img-circle" alt="User Image">
+                                        </div>
+                                        <h4>
+                                        Support Team <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                        </h4>
+                                        <p>
+                                            Why not buy a new awesome theme?
+                                        </p>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="javascript:void(0);">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown notifications-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                            <ul class="menu">
+                                <li>
+                                <a href="javascript:void(0);">
+                                    <i class="fa fa-users text-aqua"></i> 5 new members joined today </a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown user user-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/img/admin/avatar5.png" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Administrator</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <img src="assets/img/admin/avatar5.png" class="img-circle" alt="User Image">
+                                <p>
+                                     Administrator - Web Developer <small>Member since Nov. 2012</small>
+                                </p>
+                            </li>
+                            <li class="user-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Followers</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Sales</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Friends</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="assets/img/admin/avatar5.png" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>
+                        Administrator
+                    </p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <ul class="sidebar-menu">
+                <li class="treeview">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-circle-o text-red"></i><span>Dashboard</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Visualization</a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Datasheet</a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-ui-sref-active="active">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-circle-o text-red"></i><span>Products</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a data-ui-sref="admin.products"><i class="fa fa-file-o"></i> Products</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-circle-o text-red"></i><span>Sales Order</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Dashboard v1</a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Dashboard v2</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-circle-o text-red"></i><span>Appointment</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Visualization</a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Datasheet</a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-ui-sref-active="active">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-circle-o text-red"></i><span>Users &amp; Roles</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Roles</a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Permissions</a></li>
+                        <li><a data-ui-sref="admin.users"><i class="fa fa-file-o"></i> Users</a></li>
+                        <li><a data-ui-sref="admin.tokens"><i class="fa fa-file-o"></i> Access Token</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-circle-o text-red"></i><span>Application</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> General Setting</a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-file-o"></i> Email &amp; Notification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+        
+        <section class="content-header">
+            <h1>{{ __page__.title }} <small>{{ __page__.description }}</small></h1>
+        </section>
+
+        <section class="content" data-ui-view></section>
+
+    </div>
+    
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2017 <a href="https://github.com/londomloto/carmen">Carmen Store</a>.</strong> All rights reserved. 
+    </footer>
+
 </div>

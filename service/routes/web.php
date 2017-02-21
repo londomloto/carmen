@@ -14,9 +14,3 @@
 Route::get('/', function () {
     // return view('welcome');
 });
-
-Route::get('/site', function(){
-    return response()->json([
-        'title' => 'Carmen Store'
-    ]);
-});
