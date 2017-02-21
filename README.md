@@ -7,6 +7,7 @@ E-commerce application built with laravel 5 and angularjs.
 ```bash
 $ cd store
 $ npm install
+$ php artisan migrate
 ```
 
 ## Service Installation
